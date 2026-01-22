@@ -1,9 +1,10 @@
-
 # **Project Blueprint: Lotto Number Generator**
 
 ## **Overview**
 
 This application generates and displays a set of 6 unique lottery numbers. The goal is to provide a simple, user-friendly, and visually appealing way for users to get their lucky numbers.
+
+**GitHub Repository:** [https://github.com/hangyver/product-builder-lecture](https://github.com/hangyver/product-builder-lecture)
 
 ## **Design and Style**
 
