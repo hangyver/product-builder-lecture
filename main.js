@@ -15,6 +15,9 @@ class LottoNumbers extends HTMLElement {
   }
 
   render() {
+    const isLight = document.body.getAttribute('data-theme') === 'light';
+    const textColor = isLight ? '#333' : '#fff';
+
     this.shadowRoot.innerHTML = `
       <style>
         .lotto-ball {
@@ -26,7 +29,7 @@ class LottoNumbers extends HTMLElement {
           align-items: center;
           font-size: 1.8em;
           font-weight: 700;
-          color: #fff;
+          color: ${textColor};
           box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
           transition: all 0.3s ease;
         }
@@ -54,4 +57,36 @@ const lottoNumbersElement = document.querySelector('lotto-numbers');
 
 generateBtn.addEventListener('click', () => {
   lottoNumbersElement.updateNumbers();
+});
+
+// Theme switcher logic
+document.addEventListener('DOMContentLoaded', () => {
+    const themeSwitch = document.getElementById('checkbox');
+    const lottoNumbers = document.querySelector('lotto-numbers');
+
+    themeSwitch.addEventListener('change', function() {
+        if (this.checked) {
+            document.body.setAttribute('data-theme', 'light');
+            localStorage.setItem('theme', 'light');
+        } else {
+            document.body.setAttribute('data-theme', 'dark');
+            localStorage.setItem('theme', 'dark');
+        }
+        // Re-render the lotto numbers to update text color
+        lottoNumbers.render();
+    });
+
+    const currentTheme = localStorage.getItem('theme');
+    if (currentTheme) {
+        document.body.setAttribute('data-theme', currentTheme);
+
+        if (currentTheme === 'light') {
+            themeSwitch.checked = true;
+        }
+    } else {
+        // Default to dark theme if nothing is set
+        document.body.setAttribute('data-theme', 'dark');
+    }
+     // Re-render the lotto numbers to update text color
+    lottoNumbers.render();
 });

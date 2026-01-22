@@ -19,16 +19,31 @@ This application generates and displays a set of 6 unique lottery numbers. The g
 *   **Lotto Number Generation:** Generates 6 unique random numbers between 1 and 45.
 *   **Web Component:** A custom web component, `<lotto-numbers>`, will be used to display the generated numbers. This component will encapsulate the HTML, CSS, and JavaScript required to render the numbers, making the code more modular and reusable.
 *   **Interactive Button:** A button allows the user to generate a new set of numbers at any time.
+*   **Theme Switching (Dark/Light Mode):**
+    *   A toggle switch allows users to switch between a dark and a light theme.
+    *   The user's preference is saved in `localStorage` and applied on subsequent visits.
+    *   The entire UI, including text, backgrounds, and buttons, adapts to the selected theme.
 
-## **Current Plan**
+## **Previous Plan (Completed)**
 
 1.  **Modify `index.html`:**
     *   Update the title to "Lotto Number Generator".
     *   Add a `<lotto-numbers>` custom element to the body.
     *   Add a button to trigger the number generation.
+    *   Add a theme toggle switch.
 2.  **Modify `style.css`:**
     *   Add styles for the overall layout, the `<lotto-numbers>` component, and the button.
+    *   Implement light and dark theme styles using CSS variables.
 3.  **Modify `main.js`:**
     *   Create the `LottoNumbers` custom element.
     *   Implement the logic for generating and displaying the lottery numbers.
     *   Add an event listener to the button to update the numbers.
+    *   Add logic to handle theme switching and save the preference to `localStorage`.
+
+## **Current Plan**
+
+1.  **Git Deployment:**
+    *   Check the status of the repository.
+    *   Add all modified files to the staging area.
+    *   Commit the changes with a descriptive message.
+    *   Push the changes to the remote repository.
