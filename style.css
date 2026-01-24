@@ -311,3 +311,40 @@ footer a:hover {
 body[data-theme="dark"] footer a:hover {
     color: #f857a6;
 }
+
+/* Language Switcher */
+.language-switcher {
+    display: flex;
+    gap: 10px;
+    margin-left: 20px;
+}
+
+.language-switcher button {
+    background: none;
+    border: 1px solid;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 0.9em;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+body[data-theme="light"] .language-switcher button {
+    color: var(--text-color-light);
+    border-color: var(--text-color-light);
+}
+
+body[data-theme="dark"] .language-switcher button {
+    color: var(--text-color-dark);
+    border-color: var(--text-color-dark);
+}
+
+body[data-theme="light"] .language-switcher button:hover {
+    background: var(--text-color-light);
+    color: var(--bg-color-light);
+}
+
+body[data-theme="dark"] .language-switcher button:hover {
+    background: var(--text-color-dark);
+    color: var(--bg-color-dark);
+}

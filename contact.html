@@ -3,15 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Lotto Number Generator</title>
+    <title data-i18n="contact_us_title">Contact Us - Lotto Number Generator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" data-i18n="home">Home</a></li>
+                <li><a href="about.html" data-i18n="about">About</a></li>
+                <li><a href="contact.html" data-i18n="contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="theme-switch-wrapper">
+            <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <div class="slider round"></div>
+            </label>
+        </div>
+    </header>
     <div class="container">
-        <h1>Contact Us</h1>
-        <p>If you have any questions, please feel free to contact us.</p>
-        <p>Email: <a href="mailto:hangyver07@gmail.com">hangyver07@gmail.com</a></p>
-        <p><a href="index.html">Back to Home</a></p>
+        <h1 data-i18n="contact_us_heading">Contact Us</h1>
+        <p data-i18n="contact_us_text">If you have any questions, please feel free to contact us.</p>
+        <p><span data-i18n="email">Email:</span> <a href="mailto:hangyver07@gmail.com">hangyver07@gmail.com</a></p>
+        <p><a href="index.html" data-i18n="back_to_home">Back to Home</a></p>
     </div>
+    <footer>
+        <p data-i18n="copyright">&copy; 2024 Lotto Number Generator. All rights reserved.</p>
+        <ul>
+            <li><a href="privacy.html" data-i18n="privacy_policy">Privacy Policy</a></li>
+            <li><a href="about.html" data-i18n="about_us">About Us</a></li>
+            <li><a href="contact.html" data-i18n="contact_us">Contact Us</a></li>
+        </ul>
+    </footer>
+    <script src="i18n.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>

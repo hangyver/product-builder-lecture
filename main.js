@@ -89,4 +89,5 @@ document.addEventListener('DOMContentLoaded', () => {
     }
      // Re-render the lotto numbers to update text color
     lottoNumbers.render();
+    initI18n();
 });

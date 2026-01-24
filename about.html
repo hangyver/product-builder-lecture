@@ -3,16 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Lotto Number Generator</title>
+    <title data-i18n="about_us_title">About Us - Lotto Number Generator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" data-i18n="home">Home</a></li>
+                <li><a href="about.html" data-i18n="about">About</a></li>
+                <li><a href="contact.html" data-i18n="contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="theme-switch-wrapper">
+            <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <div class="slider round"></div>
+            </label>
+        </div>
+    </header>
     <div class="container">
-        <h1>About Us</h1>
-        <p>This is a placeholder for your about us page. You should replace this with your own content.</p>
-        <p>Welcome to the Lotto Number Generator! We are dedicated to providing you with the best and most random lottery numbers for your entertainment.</p>
-        <p>Our mission is to create a simple and enjoyable experience for everyone who dreams of winning the lottery. Please remember to play responsibly.</p>
-        <p><a href="index.html">Back to Home</a></p>
+        <h1 data-i18n="about_us_heading">About Us</h1>
+        <p data-i18n="about_us_placeholder">This is a placeholder for your about us page. You should replace this with your own content.</p>
+        <p data-i18n="about_us_welcome">Welcome to the Lotto Number Generator! We are dedicated to providing you with the best and most random lottery numbers for your entertainment.</p>
+        <p data-i18n="about_us_mission">Our mission is to create a simple and enjoyable experience for everyone who dreams of winning the lottery. Please remember to play responsibly.</p>
+        <p><a href="index.html" data-i18n="back_to_home">Back to Home</a></p>
     </div>
+    <footer>
+        <p data-i18n="copyright">&copy; 2024 Lotto Number Generator. All rights reserved.</p>
+        <ul>
+            <li><a href="privacy.html" data-i18n="privacy_policy">Privacy Policy</a></li>
+            <li><a href="about.html" data-i18n="about_us">About Us</a></li>
+            <li><a href="contact.html" data-i18n="contact_us">Contact Us</a></li>
+        </ul>
+    </footer>
+    <script src="i18n.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>

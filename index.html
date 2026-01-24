@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lotto Number Generator</title>
+    <title data-i18n="title">Lotto Number Generator</title>
     <meta name="google-adsense-account" content="ca-pub-4321765361722071">
     <link rel="stylesheet" href="style.css">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4321765361722071"
@@ -13,9 +13,9 @@
     <header>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html" data-i18n="home">Home</a></li>
+                <li><a href="about.html" data-i18n="about">About</a></li>
+                <li><a href="contact.html" data-i18n="contact">Contact</a></li>
             </ul>
         </nav>
         <div class="theme-switch-wrapper">
@@ -26,8 +26,8 @@
         </div>
     </header>
     <div class="container">
-        <h1>Lotto Number Generator</h1>
-        <p class="description">Welcome to the Lotto Number Generator. Get your lucky numbers for the next draw. Our generator provides you with a set of random numbers to help you play. Remember to play responsibly.</p>
+        <h1 data-i18n="title">Lotto Number Generator</h1>
+        <p class="description" data-i18n="description">Welcome to the Lotto Number Generator. Get your lucky numbers for the next draw. Our generator provides you with a set of random numbers to help you play. Remember to play responsibly.</p>
         <lotto-numbers></lotto-numbers>
         <ins class="adsbygoogle"
              style="display:block"
@@ -38,21 +38,22 @@
         <script>
              (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
-        <button id="generate-btn">Generate Numbers</button>
+        <button id="generate-btn" data-i18n="generate_numbers">Generate Numbers</button>
 
         <section class="how-it-works">
-            <h2>How It Works</h2>
-            <p>Our Lotto Number Generator uses a sophisticated algorithm to produce a set of 6 unique numbers from 1 to 45. The numbers are generated completely at random to ensure fairness and unpredictability. Click the "Generate Numbers" button to get your set of lucky numbers.</p>
+            <h2 data-i18n="how_it_works">How It Works</h2>
+            <p data-i18n="how_it_works_text">Our Lotto Number Generator uses a sophisticated algorithm to produce a set of 6 unique numbers from 1 to 45. The numbers are generated completely at random to ensure fairness and unpredictability. Click the "Generate Numbers" button to get your set of lucky numbers.</p>
         </section>
     </div>
     <footer>
-        <p>&copy; 2024 Lotto Number Generator. All rights reserved.</p>
+        <p data-i18n="copyright">&copy; 2024 Lotto Number Generator. All rights reserved.</p>
         <ul>
-            <li><a href="privacy.html">Privacy Policy</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="privacy.html" data-i18n="privacy_policy">Privacy Policy</a></li>
+            <li><a href="about.html" data-i18n="about_us">About Us</a></li>
+            <li><a href="contact.html" data-i18n="contact_us">Contact Us</a></li>
         </ul>
     </footer>
+    <script src="i18n.js"></script>
     <script src="main.js"></script>
 </body>
 </html>

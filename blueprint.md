@@ -2,7 +2,7 @@
 
 ## **Overview**
 
-This application generates and displays a set of 6 unique lottery numbers. The goal is to provide a simple, user-friendly, and visually appealing way for users to get their lucky numbers, while adhering to Google AdSense policies for high-quality sites.
+This application generates and displays a set of 6 unique lottery numbers. The goal is to provide a simple, user-friendly, and visually appealing way for users to get their lucky numbers, while adhering to Google AdSense policies for high-quality sites. The application supports both English and Korean languages.
 
 **GitHub Repository:** [https://github.com/hangyver/product-builder-lecture](https://github.com/hangyver/product-builder-lecture)
 
@@ -30,6 +30,12 @@ This application generates and displays a set of 6 unique lottery numbers. The g
     *   `contact.html`: A "Contact Us" page.
     *   `privacy.html`: A privacy policy page, which is a requirement for AdSense.
 *   **Enhanced Content:** More original and engaging content on the main page to provide more value to the user.
+*   **Internationalization (i18n):**
+    *   Users can switch between English and Korean.
+    *   The selected language is saved in `localStorage`.
+    *   All text content on the site is translated.
+    *   Translations are stored in `en.json` and `ko.json` files.
+    *   A language switcher is available in the header.
 
 ## **AdSense Integration**
 
@@ -38,17 +44,12 @@ This application generates and displays a set of 6 unique lottery numbers. The g
 3.  **ads.txt file:** An `ads.txt` file has been created in the root directory of the site with the provided content for AdSense crawler verification.
 4.  **Ad Unit Placeholder:** A placeholder ad unit has been added to the `<body>` of `index.html`. The `data-ad-slot` needs to be updated with a real ad slot ID from the AdSense account.
 
-## **Current Plan: High-Quality Site for AdSense**
+## **Current Plan: Internationalization**
 
-1.  **Update `blueprint.md`:** Reflect the new site structure and features for AdSense compliance. (Completed)
-2.  **Create `privacy.html`:** A simple privacy policy page.
-3.  **Create `about.html`:** An "About Us" page.
-4.  **Create `contact.html`:** A "Contact Us" page.
-5.  **Update `index.html`:**
-    *   Add a navigation bar.
-    *   Add a footer.
-    *   Add new content sections to provide more value to the user.
-6.  **Update `style.css`:**
-    *   Add styles for the navigation bar, footer, and new content sections.
-    *   Ensure a consistent look and feel across all pages.
+1.  **Update `blueprint.md`:** Document the new i18n feature. (Completed)
+2.  **Create translation files:** Create `en.json` and `ko.json` files with all the text content of the website.
+3.  **Implement language switcher:** Add a language switcher to the header of all pages.
+4.  **Implement translation logic:** Create a JavaScript function to load the translations and update the content of the pages based on the selected language.
+5.  **Refactor HTML:** Add `data-i18n` attributes to all HTML elements that need to be translated.
+6.  **Update CSS:** Add styles for the language switcher.
 7.  **Push changes to GitHub:** Once all changes are implemented, push them to the remote repository.
