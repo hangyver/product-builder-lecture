@@ -133,10 +133,13 @@ lotto-numbers {
 }
 
 /* Theme Switcher */
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
 .theme-switch-wrapper {
-    position: absolute;
-    top: 20px;
-    right: 20px;
     display: flex;
     align-items: center;
 }
@@ -316,7 +319,6 @@ body[data-theme="dark"] footer a:hover {
 .language-switcher {
     display: flex;
     gap: 10px;
-    margin-left: 20px;
 }
 
 .language-switcher button {

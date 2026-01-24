@@ -32,7 +32,7 @@ function createLanguageSwitcher() {
         <button id="lang-en">English</button>
         <button id="lang-ko">한국어</button>
     `;
-    document.querySelector('header').appendChild(switcher);
+    document.querySelector('.header-right').appendChild(switcher);
 
     document.getElementById('lang-en').addEventListener('click', () => setLanguage('en'));
     document.getElementById('lang-ko').addEventListener('click', () => setLanguage('ko'));
