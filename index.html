@@ -10,14 +10,24 @@
      crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
         <div class="theme-switch-wrapper">
             <label class="theme-switch" for="checkbox">
                 <input type="checkbox" id="checkbox" />
                 <div class="slider round"></div>
             </label>
         </div>
+    </header>
+    <div class="container">
         <h1>Lotto Number Generator</h1>
+        <p class="description">Welcome to the Lotto Number Generator. Get your lucky numbers for the next draw. Our generator provides you with a set of random numbers to help you play. Remember to play responsibly.</p>
         <lotto-numbers></lotto-numbers>
         <ins class="adsbygoogle"
              style="display:block"
@@ -29,7 +39,20 @@
              (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
         <button id="generate-btn">Generate Numbers</button>
+
+        <section class="how-it-works">
+            <h2>How It Works</h2>
+            <p>Our Lotto Number Generator uses a sophisticated algorithm to produce a set of 6 unique numbers from 1 to 45. The numbers are generated completely at random to ensure fairness and unpredictability. Click the "Generate Numbers" button to get your set of lucky numbers.</p>
+        </section>
     </div>
+    <footer>
+        <p>&copy; 2024 Lotto Number Generator. All rights reserved.</p>
+        <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </footer>
     <script src="main.js"></script>
 </body>
 </html>

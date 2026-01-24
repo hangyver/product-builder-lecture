@@ -189,3 +189,125 @@ input:checked + .slider:before {
 .slider.round:before {
     border-radius: 50%;
 }
+
+/* Header and Navigation */
+header {
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+body[data-theme="light"] nav a {
+    color: var(--text-color-light);
+}
+
+body[data-theme="dark"] nav a {
+    color: var(--text-color-dark);
+}
+
+nav a:hover {
+    color: #3a7bd5;
+}
+
+body[data-theme="dark"] nav a:hover {
+    color: #f857a6;
+}
+
+
+/* Main Content Adjustments */
+body {
+    padding-top: 80px; /* Adjust for header */
+    padding-bottom: 100px; /* Adjust for footer */
+    flex-direction: column;
+}
+
+.description {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.how-it-works {
+    margin-top: 50px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.how-it-works h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    padding: 20px 40px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box;
+    font-size: 0.9em;
+}
+
+body[data-theme="light"] footer {
+    color: #666;
+}
+
+body[data-theme="dark"] footer {
+    color: #aaa;
+}
+
+footer ul {
+    list-style: none;
+    margin: 10px 0 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+body[data-theme="light"] footer a {
+    color: #666;
+}
+
+body[data-theme="dark"] footer a {
+    color: #aaa;
+}
+
+footer a:hover {
+    color: #3a7bd5;
+}
+
+body[data-theme="dark"] footer a:hover {
+    color: #f857a6;
+}
